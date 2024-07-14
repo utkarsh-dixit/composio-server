@@ -4,6 +4,6 @@
         "builder": "NIXPACKS"
     },
     "deploy": {
-        "startCommand": "python manage.py migrate && python manage.py collectstatic --noinput && gunicorn mysite.wsgi"
+        "startCommand": "composio serve --host 0.0.0.0 --port 8000"
     }
 }
